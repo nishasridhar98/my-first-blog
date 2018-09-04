@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com'] #for local host
 
-ALLOWED_HOSTS = ['nishasridhar.pythonanywhere.com']
+#ALLOWED_HOSTS = ['nishasridhar.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'myblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Kolkata'#mytimezone
+TIME_ZONE = 'UTC'#mytimezone
 
 USE_I18N = True
 
